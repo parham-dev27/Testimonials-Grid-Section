@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap");
+
+:root {
+    /* Font */
+    --FS: 13px;
+    --FF: "Barlow Semi Condensed", sans-serif;
+    --FW-Normal: 500;
+    --FW-Bold: 600;
+
+    /* Colors */
+    --PURPLE: hsl(263, 55%, 52%);
+    --WHITE: hsl(0, 0%, 100%);
+    --GRAY: hsl(217, 19%, 35%);
+    --DARK-BLUE: hsl(219, 29%, 14%);
+    --BG-BODY: hsl(210, 46%, 95%);
+
+    /* BreakPoints */
+    --MOBILE: 375px;
+    --DESKTOP: 1440px;
+
+    /* Other */
+    --B-RADIUS: 7.5px;
+}
+
+/* Reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+blockquote::after {
+    content: close-quote;
+}
+
+blockquote > p {
+    display: inline;
+}
+
+p {
+    line-height: 150%;
+}
+
+/* Rules */
+
+body {
+    font-family: var(--FF);
+    font-weight: var(--FW-Normal);
+    font-size: var(--FS);
+    color: var(--WHITE);
+    min-height: 100dvh;
+    background-color: var(--BG-BODY);
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    padding: 25px;
+    border-radius: var(--B-RADIUS);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 5px 10px hsl(0, 0%, 81%);
+}
+
+.name {
+    font-size: calc(var(--FS) * 1);
+}
+
+.status {
+    font-size: calc(var(--FS) * 0.8);
+    opacity: 0.5;
+}
+
+.profilePic {
+    border-radius: 50%;
+}
+
+.card__info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.card__header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    gap: 1rem;
+}
+
+.border--daniel {
+    border: 2px solid hsla(0, 0%, 100%, 50%);
+}
+
+.card__main {
+    font-size: 1.4em;
+    font-weight: var(--FW-Bold);
+}
+
+.card__footer {
+    opacity: 0.7;
+}
+
+.card--purple {
+    background-color: var(--PURPLE);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-position: 90% 0;
+    background-repeat: no-repeat;
+}
+
+.card--gray {
+    background-color: var(--GRAY);
+}
+
+.card--white {
+    background-color: var(--WHITE);
+    color: var(--DARK-BLUE);
+}
+
+.card--dark-blue {
+    background-color: var(--DARK-BLUE);
+}
+
+.border--patrick {
+    border: 2px solid hsla(263, 55%, 52%, 75%);
+}
+
+.page {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "Daniel"
+        "Jonathan"
+        "Jeanette"
+        "Patrick"
+        "Kira";
+    padding: 20px;
+}
+
+.daniel {
+    grid-area: Daniel;
+}
+
+.kira {
+    grid-area: Kira;
+}
+
+.jonathan {
+    grid-area: Jonathan;
+}
+
+.jeanette {
+    grid-area: Jeanette;
+}
+
+.patrick {
+    grid-area: Patrick;
+}
+
+@media (min-width: 801px) {
+    .page {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "Daniel Jonathan"
+            "Kira Kira"
+            "Jeanette Patrick";
+    }
+}
+@media (min-width: 1201px) {
+    .page {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "Daniel Daniel Jonathan Kira"
+            "Jeanette Patrick Patrick Kira";
+    }
+}
