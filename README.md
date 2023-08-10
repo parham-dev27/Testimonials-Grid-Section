@@ -1,4 +1,4 @@
-<img src="./assets/screenshot-desktop.png"></img>
+<img src="./Screenshots/screenshot-desktop.png"></img>
 
 <h1 align="center">Testimonials Grid Section</h1>
 
