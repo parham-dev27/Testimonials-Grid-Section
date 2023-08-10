@@ -4,15 +4,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://parham-dev27.github.io/testimonials-grid-section-frontendmentor/" color="white">
+    <a href="https://parham-dev27.github.io/Testimonials-Grid-Section/" color="white">
       Live
     </a>
     <span> | </span>
-    <a href="#">
+    <a href="https://www.frontendmentor.io/solutions/testimonials-grid-section-parhamdev27-ry9mBDQ6uS">
       Solution
     </a>
    <span> | </span>
-    <a href="#">
+    <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub">
       Challenge
     </a>
   </h3>
@@ -20,7 +20,6 @@
 <div align="center">
    Solution for a challenge from  <a href="https://www.frontendmentor.io/" target="_blank">frontendmentor.io</a>.
 </div>
-<br>
 <br>
 <br>
 
@@ -46,4 +45,4 @@ Another great project to practice grid. I finally had a better understanding of 
 
 ## Acknowledgments
 
-A big thank you to anyone providing feedback on my <a href="#">solution</a>. It definitely helps to find new ways to code and find easier solutions!
+A big thank you to anyone providing feedback on my <a href="https://www.frontendmentor.io/solutions/testimonials-grid-section-parhamdev27-ry9mBDQ6uS">solution</a>. It definitely helps to find new ways to code and find easier solutions!
